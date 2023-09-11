@@ -17,11 +17,15 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          {process.env.REACT_APP_BACKEND_URL}
+        </p>
+        <p>
+          {process.env.REACT_APP_BACKEND_SECRET}
         </p>
         <button data-cy="init_button" onClick={handleClick}>
           Click here
         </button>
+        <input data-cy="baseUrlInput" type="text" />
         <a
           className="App-link"
           href="https://reactjs.org"

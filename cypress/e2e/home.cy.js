@@ -6,5 +6,6 @@ describe("template spec", () => {
     cy.visit("/");
     console.log("CYPRESS TEST CASES ======>    ENV SECS ARE .. ", Cypress.env("base_url"), Cypress.env("auth0_username"), Cypress.env("auth0_password"));
     cy.get('[data-cy="init_button"]').click();
+    cy.get('[data-cy="baseUrlInput"]').type(Cypress.env("base_url"));
   });
 });
