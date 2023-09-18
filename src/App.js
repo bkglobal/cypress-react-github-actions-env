@@ -15,14 +15,14 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={logo} className="App-logo" alt="logo" data-cy="logo-app"/>
         <p>
           {process.env.REACT_APP_BACKEND_URL}
         </p>
         <p>
           {process.env.REACT_APP_BACKEND_SECRET}
         </p>
-        <button data-cy="init_button" onClick={handleClick}>
+        <button data-cy="click-btn" onClick={handleClick}>
           Click here
         </button>
         <input data-cy="baseUrlInput" type="text" />
